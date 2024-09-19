@@ -7,9 +7,14 @@ int Map::getArraySize()
 {
    return arraySize;
 }
-int Map::getNumberTry()
+int Map::getPlayerTries()
 {
-   return numberTry;
+   return  _playerTries;
+}
+
+int Map::getWrongTriesAllowed()
+{
+   return _wrongTriesAllowed;
 }
 
 int Map::random()
@@ -24,17 +29,12 @@ bool Map::isNumber()
       std::cin.ignore();
       return true;
    }
-   else
-   {
-      return false;
-   }
+   return false;
 }
-
-
 void Map::createMap()
 {
    srand(time(NULL));
-   for (int i = 0; i < numberArray; ++i)
+   for (int i = 0; i < arraySize; ++i)
    {
       for (int j = 0; j < arraySize; ++j)
       {
@@ -46,7 +46,7 @@ void Map::createMap()
 
 void Map::showMap() 
 {
-   for(int i = 0; i < numberArray; i++)
+   for(int i = 0; i < arraySize; i++)
    {
       std::cout << "|";
       for(int j = 0; j < arraySize; j++)
@@ -65,13 +65,14 @@ void Map::showMap()
 }
 bool Map::checkWin(int line, int column)
 {
+   _playerTries++;
    if(theMap[line][column] == Case::Treasure)
    {
-      std::cout << "You win! What will you do with all that money ? Nah i don't care.\n";
+      theMap[line][column] = Case::FoundTreasure;
       return true;
    }
-   numberTry--;
-   std::cout << "Careful you can't miss the tresure more than" << numberTry << " times.\nYou are really that bad ??";
+   _wrongTriesAllowed--;
+   theMap[line][column] = Case::Diged;
    return false;
    
 }

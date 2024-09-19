@@ -12,18 +12,20 @@ enum class Case
 
 
 const int arraySize = 3;
-const int numberArray = 3;
 
 class Map
 {
 private:
-    int numberTry;
+    int _playerTries;
+    int _wrongTriesAllowed;
     int random();
+    std::array<std::array<Case, arraySize>, arraySize> theMap;
 public:
     int getArraySize();
-    int getNumberTry();
+    int getPlayerTries();
+    int getWrongTriesAllowed();
     bool isNumber();
-    std::array<std::array<Case, arraySize>, numberArray> theMap;
+   
 
   
     void createMap();
@@ -31,7 +33,7 @@ public:
     bool checkWin(int line, int column);
 
     
-    Map() : numberTry(5)
+    Map() : _wrongTriesAllowed(5), _playerTries(0)
     {
         createMap();
     }
