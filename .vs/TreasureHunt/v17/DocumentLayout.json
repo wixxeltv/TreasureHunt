@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\WIXXEL\\Documents\\2024-2025\\ProjectC\u002B\u002B\\TreasureHunt\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{886A7449-E901-411C-B7C8-64CFDF1540E4}|TreasureHunt\\TreasureHunt.vcxproj|C:\\Users\\WIXXEL\\Documents\\2024-2025\\ProjectC\u002B\u002B\\TreasureHunt\\TreasureHunt\\TreasureHunt.cc||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{886A7449-E901-411C-B7C8-64CFDF1540E4}|TreasureHunt\\TreasureHunt.vcxproj|solutionrelative:TreasureHunt\\TreasureHunt.cc||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TreasureHunt.cc",
+              "DocumentMoniker": "C:\\Users\\WIXXEL\\Documents\\2024-2025\\ProjectC\u002B\u002B\\TreasureHunt\\TreasureHunt\\TreasureHunt.cc",
+              "RelativeDocumentMoniker": "TreasureHunt\\TreasureHunt.cc",
+              "ToolTip": "C:\\Users\\WIXXEL\\Documents\\2024-2025\\ProjectC\u002B\u002B\\TreasureHunt\\TreasureHunt\\TreasureHunt.cc",
+              "RelativeToolTip": "TreasureHunt\\TreasureHunt.cc",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-19T08:13:33.271Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
